@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 20px;
+    background-color: #e5e5e5;
+    border-radius: 8px;
+}
+.container .input{
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container .input input{
+    width: 400px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 22px;
+    border-radius: 8px;
+}
+.container .input button{
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media(max-width: 767px) {
+    .container {
+        border-radius: 0;
+    }
+    .container .input {
+        flex-direction: column;
+    }
+    .container .input input {
+        width: 320px;
+    }
+    .container .input button {
+        width: 100%;
+    }
+}
+.container .output{
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .output div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF5722;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.container .output div:hover {
+    background-color: #f4433687
+}
+.container .output div.end {
+    background-color: #f4433687;
+}
+.container .output span{
+    font-size: 23px;
+}
+.container .output button{
+    background-color: white;
+    border: none;
+    padding: 5px 8px;
+    color: #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.container .output button:hover {
+    transform: scale(1.1);
+}
+
+.delAll {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #F44336;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.delAll:hover {
+    transform: scale(1.1);
+}
